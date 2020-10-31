@@ -118,7 +118,24 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = "/media/"
+
+# STATIC_ROOT = BASE_DIR / 'static'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
+    
 ]
+
+
+PASSWORD_RESET_TIMEOUT = 3600 # The token will expire by 
+
+SENDGRID_API_KEY = ''
+
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey'
+EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
