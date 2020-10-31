@@ -1,0 +1,14 @@
+{% extends 'bootstrap.base.html' %}
+
+{% block title %}
+Login-CRM
+{% endblock title %}
+{%  block content %}
+
+<form action="{% url 'accounts:login' %}" method="post">
+    {% csrf_token %}
+    <input type = "hidden" name ="next" value ="{{ request.GET.next }}"/>
+    {{form}}
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+{%  endblock content %}

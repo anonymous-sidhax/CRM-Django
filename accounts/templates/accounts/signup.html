@@ -1,0 +1,14 @@
+{% extends 'bootstrap.base.html' %}
+
+{% block title %}
+Signup-CRM
+{% endblock title %}
+{%  block content %}
+
+<form action="{% url 'accounts:signup' %}" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btn btn-primary">Create A free account</button>
+</form>
+
+{%  endblock content %}
