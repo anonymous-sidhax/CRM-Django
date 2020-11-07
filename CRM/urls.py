@@ -19,11 +19,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.http import HttpResponse
 
-def home (request):
-    return HttpResponse('This is homepage')
     
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('core.urls')),
     path('accounts/', include('accounts.urls', namespace='accounts')),
-    path('', home, name="home")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
