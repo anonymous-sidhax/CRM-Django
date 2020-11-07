@@ -1,0 +1,98 @@
+{% extends 'bootstrap.base.html' %}
+{% load static %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/homestyle.min.css' %}">
+{% endblock css %}
+{% block title %}
+HOME-CRM
+{% endblock title %}
+{%  block content %}
+    
+
+    
+    <div class="container-fluid" style="border: 1px solid #eeee;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;">
+        <div class="card brn py-2 main-font-2 d-md-none d-md-block d-sm-none d-none"><span class="d-flex" style="justify-content: flex-end;"><span><a class="a-nos d-flex justify-content-between align-items-center" href="mailto:" > <span class="material-icons mx-2">mail_outline</span> contact@djangocrm.com</a></span></span></div>
+    </div>
+
+    <!-- #### NAVBAR #### -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons" style="font-size: 30px;">
+          menu
+          </span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item active">
+            <a class="nav-link a-nos mr-2 ml-4" href="#">Features</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link a-nos mr-2 ml-4" href="#">Pricing</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link  text-white button btn-primary btn mx-4" href="#" style="padding: 11px 21px;width: 120px;">Login</a>
+          </li>
+
+
+        <!-- #### DROPDOWN MENU #### -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+        <!-- #### DROPDOWN MENU #### -->
+      
+        </ul>
+      </div>
+    </nav>
+    <!-- #### NAVBAR #### -->
+    
+    
+    <!-- #### MAIN SECTION #### -->
+      <div class="container-fluid" >
+        <div class="container p-0">
+          <div class="row mx-auto align-items-center">
+            <div class="col-lg-6 col-12 p-0">
+              <div class="card brn">
+                <div class="card-body p-0 pt-5">
+                  <h2 style="font-weight: 700;">
+                    Do You Wish to Amplify Your Sales Process?
+                  </h2>
+                  <p class="mt-5 mb-5 subtitle1">
+                    Zoho CRM empowers a global network of over 150,000 businesses in 180 countries to convert more leads, engage with customers, and grow their revenue. Transform your business with the world’s favorite customer relationship management software.
+                  </p>
+                  <!-- <a href="" class="btn btn-primary button" data-toggle="modal" data-target="#exampleModal" style="padding: 11px 20px;">Join For Free</a> -->
+                <!-- Button trigger modal -->
+              <a type="button" class="btn button btn-primary" style="padding: 11px 20px;">
+                Join For Free
+              </a>
+
+          
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 d-none d-lg-block d-xl-block">
+              <div class="card brn">
+                <img src="{% static 'images/heroimg.svg' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- #### MAIN SECTION #### -->
+
+    
+  
+   
+{% endblock %}
